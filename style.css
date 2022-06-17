@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./image/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    height: 100vh;
+    padding: 0 50px;
+    color: white;
+}
+
+.intro h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.top{
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.485);
+    margin-bottom: 20px;
+}
+
+.f-main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.485);
+}
+
+.f-main input{
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    width: 400px;
+}
+
+.f-main input:focus{
+    outline: 1px solid hsl(249, 10%, 26%);
+}
+
+.f-main button{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.f-main button:active{
+    transform: scale(0.99);
+}
+
+.f-main p{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+}
+
+.f-main p span {
+    color: hsl(0, 100%, 74%);
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url(./image/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    main{
+        /* flex-direction: column; */
+        display: block;
+    }
+
+    .intro h1{
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .intro p{
+        text-align: center;
+    }
+
+    .top{
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px 25px;
+    }
+
+    .f-main input{
+        width: 100%;
+    }
+}
